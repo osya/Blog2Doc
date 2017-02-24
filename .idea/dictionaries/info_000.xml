@@ -2,6 +2,11 @@
   <dictionary name="info_000">
     <words>
       <w>docx</w>
+      <w>exampleofablog</w>
+      <w>hgroup</w>
+      <w>robotstxt</w>
+      <w>scrapy</w>
+      <w>startproject</w>
     </words>
   </dictionary>
 </component>
