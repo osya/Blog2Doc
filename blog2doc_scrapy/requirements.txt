@@ -1,0 +1,3 @@
+scrapy==1.3.2
+git+https://github.com/osya/scrapy-mongodb
+lxml==3.7.3

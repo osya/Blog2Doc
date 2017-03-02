@@ -25,11 +25,13 @@ class BlogSpiderSpider(CrawlSpider):
             (response.xpath('.//*[contains(concat(" ", normalize-space(@class), " "), " post ")][1]') or [None])[0]
         if post_node is not None:
             item = Post()
-            item['body'] = post_node
+            item['url'] = response.url
+            item['body'] = post_node.extract()
             yield item
 
     def parse_start_url(self, response):
         item = Page()
+        item['url'] = response.url
         item['body'] = response.text
         self.header_and_footer_generate = True
         return item

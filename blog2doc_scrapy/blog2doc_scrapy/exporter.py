@@ -23,7 +23,7 @@ class Blog2DocExporter(BaseItemExporter):
             self.page_tree = page_tree
             self.content_node = page_tree.xpath(".//*[@id='content']")[0]
         else:
-            self.content_node.append(item['body'].root)
+            self.content_node.append(html.fromstring(item['body']))
 
     def finish_exporting(self):
         self.page_tree.write(self.file)

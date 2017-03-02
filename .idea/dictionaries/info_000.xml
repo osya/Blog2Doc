@@ -6,7 +6,9 @@
       <w>hgroup</w>
       <w>robotstxt</w>
       <w>scrapy</w>
+      <w>scrapymongodb</w>
       <w>startproject</w>
+      <w>uniq</w>
     </words>
   </dictionary>
 </component>

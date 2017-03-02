@@ -9,6 +9,7 @@ from scrapy.item import Item, Field
 
 
 class Post(Item):
+    url = Field()
     body = Field()
 
 
@@ -16,4 +17,5 @@ class Page(Item):
     """
      This item contains page for generate header and footer from it
     """
+    url = Field()
     body = Field()

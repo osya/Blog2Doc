@@ -4,7 +4,7 @@ from pip.req import parse_requirements
 
 requirements = parse_requirements("requirements.txt", session="")
 setup(
-        name='Blog2Doc',
+        name='Blog2DocScrapy',
         version='',
         description='',
         author='Valeriy Osipov',
